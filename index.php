@@ -26,7 +26,7 @@
 				<li><a href="#sec">Mahsulotlar</a></li>
 				
 				<li><a href="#about-me">Biz haqimizda</a></li>
-				<li><a href="Sign_In/log-in.php" title="Kirish"><i class="fa fa-sign-in"></i></a></li>
+				<li><a href="login.php" title="Kirish"><i class="fa fa-sign-in"></i></a></li>
 			</ul>
 
 			<div class="menu-btn">
@@ -44,8 +44,30 @@
 	
 	</section>	
 
-	<h1 class="pheading">Eng so'ngi mahsulotlarimiz</h1>
-	<section class="sec" id="sec">
+	<div class="container" id="namuna">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Eng so'ngi mahsulotlarimiz</h1>
+            <p class="fs-5 text-body-secondary">Bizning eng yaxshi ishlaarimizdan namunalar</p>
+            </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <?php foreach($img_olish as $olish): ?>
+                        <div class="col" >
+                            <div class="card shadow-sm">
+                                <?php echo "<img src='data:" . $olish['mime_type'] . ";base64," . base64_encode($olish['image_data']) . "' width=100% height=350>";?>
+                                <div class="card-body">
+                                    <p class="card-text"><?php echo $olish['malumot'] ?></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Bog'lanish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+        </div>
+        <hr class="featurette-divider">
+    </div> <
 		<!-- ++++++ -->
 	</section>
 

@@ -7,12 +7,6 @@
 
         header("Location: admin_p.php");
     }
-        // elseif(empty($login) && empty($parol)){
-        //     echo "Iltimos login va parolni to'liq kiriting !";
-        // } 
-    // else{
-    //     echo "Login yoki parol xato !";
-    // }
 
 ?>
 

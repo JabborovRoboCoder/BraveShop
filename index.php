@@ -24,7 +24,7 @@
 	<title>BraveShop</title>
 </head>
 <body>
-	<header>
+	<header class=" position-fixed w-100 fixed-top">
 	<nav class="navbar">
 		<div class="logo">
 			<a href="index.php">
@@ -63,10 +63,10 @@
                     <?php foreach($img_olish as $olish): ?>
                         <div class="col" >
                             <div class="card shadow-sm">
-                                <?php echo "<img src='data:" . $olish['mime_type'] . ";base64," . base64_encode($olish['image_data']) . "' width=100% height=350>";?>
+                                <?php echo "<img  src='data:" . $olish['mime_type'] . ";base64," . base64_encode($olish['image_data']) . "' width=362 height=376>";?>
                                 <div class="card-body">
 									<h3 class="card-text"><?= $olish['name1'] ?></h3>
-                                    <p class="card-text"><?php echo $olish['name2'] ?></p>
+                                    <p class="card-text"><?= $olish['name2'] ?></p>
 									<h4 class="card-text"><?= $olish['narx']?> $</h4>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">

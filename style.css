@@ -11,10 +11,7 @@ body{
 /* Herader section */
 
 
-header{
-	position: fixed;
-	width: 100%;
-}
+
 
 .menu-btn{
 	color: #424144;
@@ -30,8 +27,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	top: 0%;
-	z-index: 300;
+	top: 0;
+	z-index: 9999;
 	background-color: #f3f4f6;
 	box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
@@ -185,7 +182,6 @@ header{
 }
 
 .card img{
-	width: 300px;
 	padding: 10px 3px;
 }
 
@@ -480,6 +476,7 @@ span:hover{
 	background-color: #f63e4e;
 	color: white;
 }
+
 
 /* +++++ */
 

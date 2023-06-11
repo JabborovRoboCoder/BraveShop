@@ -14,10 +14,9 @@
         $imageName = $_FILES['image']['name'];
         $mimeType = $_FILES['image']['type'];
 
-        $stmt = $pdo->prepare("INSERT INTO 'add' (name1,name2,narx,narx2, image_name, mime_type, image_data) VALUES (?,?,?,?,?,?,?)");
-        $stmt->execute([$name1,$name2,$narx,$narx2,$imageName, $mimeType, $imageData]);
+        $stmt = $pdo->prepare("INSERT INTO my_table (name1,name2,narx,narx2, image_name, mime_type, image_data) VALUES (?,?,?,?,?,?,?)");
+        $stmt->execute([$name1, $name2, $narx, $narx2, $imageName, $mimeType, $imageData]);
            
-
     }
 ?>
 

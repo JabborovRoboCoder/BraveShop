@@ -1,21 +1,18 @@
 
 <?php 
-$login=$_POST['login'];
-$parol=$_POST['parol'];      
+    $login=$_POST['login'] ?? null;
+    $parol=$_POST['parol'] ?? null;      
 
-if($login == "anvar" && $parol == 12345){
-    
-    //  $host=$_SERVER['HTTP_HOST'];
-    //  $sahifa=$_POST['admin_p.php'];
+    if($login == "anvar" && $parol == 12345){
 
-     header("Location: admin_p.php");
-}
-     elseif(empty($login) && empty($parol)){
-         echo "Iltimos login va parolni to'liq kiriting !";
-     } 
- else{
-     echo "Login yoki parol xato !";
- }
+        header("Location: admin_p.php");
+    }
+        // elseif(empty($login) && empty($parol)){
+        //     echo "Iltimos login va parolni to'liq kiriting !";
+        // } 
+    // else{
+    //     echo "Login yoki parol xato !";
+    // }
 
 ?>
 
